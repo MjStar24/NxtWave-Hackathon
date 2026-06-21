@@ -53,9 +53,7 @@ UniConnect is a standalone application built on CampusCollab's base platform to 
 
 
 
-### App View
-| <img  alt="image" src="https://i.imgur.com/q90iE5s.png"> | <img alt="image" src="https://i.imgur.com/pnDldps.png"> | <img  alt="image" src="https://i.imgur.com/9wlOF5Q.png"> | <img  alt="image" src="https://i.imgur.com/wjGtllD.png">|
-|:---:|:---:|:---:|:---:|
+
 
 
 
@@ -120,66 +118,13 @@ Move to the clonned repository in your local environment
   
   > The model will be served on **http://localhost:3000/**
 
-### Steps to run App
-* Move to app folder -`cd app`
-* Run `flutter pub get` to get the dependencies
-* Run `flutter run`
+
  
            
 
 ## Directory Structure
 ```
 ├───.vscode
-├───app
-│   ├───android
-│   │   ├───app
-│   │   │   └───src
-│   │   │       ├───debug
-│   │   │       ├───main
-│   │   │       │   ├───kotlin
-│   │   │       │   │   └───com
-│   │   │       │   │       └───example
-│   │   │       │   │           └───app
-│   │   │       │   └───res
-│   │   │       │       ├───drawable
-│   │   │       │       ├───drawable-v21
-│   │   │       │       ├───mipmap-hdpi
-│   │   │       │       ├───mipmap-mdpi
-│   │   │       │       ├───mipmap-xhdpi
-│   │   │       │       ├───mipmap-xxhdpi
-│   │   │       │       ├───mipmap-xxxhdpi
-│   │   │       │       ├───values
-│   │   │       │       └───values-night
-│   │   │       └───profile
-│   │   └───gradle
-│   │       └───wrapper
-│   ├───assets
-│   │   └───nav
-│   ├───fonts
-│   ├───ios
-│   │   ├───Flutter
-│   │   ├───Runner
-│   │   │   ├───Assets.xcassets
-│   │   │   │   ├───AppIcon.appiconset
-│   │   │   │   └───LaunchImage.imageset
-│   │   │   └───Base.lproj
-│   │   ├───Runner.xcodeproj
-│   │   │   ├───project.xcworkspace
-│   │   │   │   └───xcshareddata
-│   │   │   └───xcshareddata
-│   │   │       └───xcschemes
-│   │   ├───Runner.xcworkspace
-│   │   │   └───xcshareddata
-│   │   └───RunnerTests
-│   ├───lib
-│   │   ├───models
-│   │   ├───requests
-│   │   ├───screens
-│   │   ├───utils
-│   │   └───widgets
-│   ├───test
-│   └───web
-│       └───icons
 ├───backend
 │   ├───.adminbro
 │   ├───config
