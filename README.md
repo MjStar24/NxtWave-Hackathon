@@ -6,7 +6,7 @@ UniConnect is a standalone application built on CampusCollab's base platform to 
 
 ---
 ### TruSpace
-<img width="959" alt="image" src="https://i.imgur.com/c10PQh6.png">
+<img width="959" alt="image" src="https://i.imgur.com/hjcLFHB.png">
 
 
 
@@ -16,24 +16,20 @@ UniConnect is a standalone application built on CampusCollab's base platform to 
 
 ## Main Features (Both web and app-based)
 * **CIA**: Collective Intelligence Agents (CIAs) are LLMs trained upon specialized information, initiated with additional context prompts.CIAs can also be added as team members while creating a new team on CampusCollab. They can act as project managers, code reviewers, meeting assistants, etc.
-  <img width="956" alt="image" src="https://i.imgur.com/gFzfO3D.png">
+  <img width="956" alt="image" src="https://i.imgur.com/0TLx6oT.png">
 
  
 
 
 * **Mentorship Availability**: Students can explore mentor profiles and view their availability. They can book sessions, connect for personalised guidance and rate their experiences for a transparent learning journey.
-  <img width="950" alt="image" src="https://i.imgur.com/8XJnr0l.png">
-
-* **Communities Page**: Connecting alumni and students through dynamic posts, chats, reactions, and comments, fostering engagement and nostalgia in global and club-specific communities.
-
-  <img width="960" alt="image" src="https://i.imgur.com/RVzQa8G.png">
+  <img width="950" alt="image" src="https://i.imgur.com/0EFRTAw.png">
 
  
 
 
 * **TruNotes**: Create save and organize notes and according to permissions publish them to specific communities.
-  <img width="581" alt="image" src="https://i.imgur.com/tMFf4oc.png">
-  ![image](https://i.imgur.com/zeHOqGu.png)
+  <img width="581" alt="image" src="https://i.imgur.com/GFVEgHz.png">
+  ![image](https://i.imgur.com/lJkdJNC.png)
 
 
 
@@ -42,7 +38,7 @@ UniConnect is a standalone application built on CampusCollab's base platform to 
  
 
 * **Gamification**: Users earn badges and sparks for their activity and achievements, and compete on the leaderboard for recognition. Tiers will be displayed on the student’s profile and will help clients become aware of their skill level.
- <img width="960" alt="image" src="https://i.imgur.com/hjOL2yZ.png">
+ <img width="960" alt="image" src="https://i.imgur.com/xj7tGND.png">
 
 
 
@@ -57,9 +53,7 @@ UniConnect is a standalone application built on CampusCollab's base platform to 
 
 
 
-### App View
-| <img  alt="image" src="https://i.imgur.com/q90iE5s.png"> | <img alt="image" src="https://i.imgur.com/pnDldps.png"> | <img  alt="image" src="https://i.imgur.com/9wlOF5Q.png"> | <img  alt="image" src="https://i.imgur.com/wjGtllD.png">|
-|:---:|:---:|:---:|:---:|
+
 
 
 
@@ -124,66 +118,13 @@ Move to the clonned repository in your local environment
   
   > The model will be served on **http://localhost:3000/**
 
-### Steps to run App
-* Move to app folder -`cd app`
-* Run `flutter pub get` to get the dependencies
-* Run `flutter run`
+
  
            
 
 ## Directory Structure
 ```
 ├───.vscode
-├───app
-│   ├───android
-│   │   ├───app
-│   │   │   └───src
-│   │   │       ├───debug
-│   │   │       ├───main
-│   │   │       │   ├───kotlin
-│   │   │       │   │   └───com
-│   │   │       │   │       └───example
-│   │   │       │   │           └───app
-│   │   │       │   └───res
-│   │   │       │       ├───drawable
-│   │   │       │       ├───drawable-v21
-│   │   │       │       ├───mipmap-hdpi
-│   │   │       │       ├───mipmap-mdpi
-│   │   │       │       ├───mipmap-xhdpi
-│   │   │       │       ├───mipmap-xxhdpi
-│   │   │       │       ├───mipmap-xxxhdpi
-│   │   │       │       ├───values
-│   │   │       │       └───values-night
-│   │   │       └───profile
-│   │   └───gradle
-│   │       └───wrapper
-│   ├───assets
-│   │   └───nav
-│   ├───fonts
-│   ├───ios
-│   │   ├───Flutter
-│   │   ├───Runner
-│   │   │   ├───Assets.xcassets
-│   │   │   │   ├───AppIcon.appiconset
-│   │   │   │   └───LaunchImage.imageset
-│   │   │   └───Base.lproj
-│   │   ├───Runner.xcodeproj
-│   │   │   ├───project.xcworkspace
-│   │   │   │   └───xcshareddata
-│   │   │   └───xcshareddata
-│   │   │       └───xcschemes
-│   │   ├───Runner.xcworkspace
-│   │   │   └───xcshareddata
-│   │   └───RunnerTests
-│   ├───lib
-│   │   ├───models
-│   │   ├───requests
-│   │   ├───screens
-│   │   ├───utils
-│   │   └───widgets
-│   ├───test
-│   └───web
-│       └───icons
 ├───backend
 │   ├───.adminbro
 │   ├───config
