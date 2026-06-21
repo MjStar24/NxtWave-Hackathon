@@ -38,7 +38,7 @@ UniConnect is a standalone application built on CampusCollab's base platform to 
  
 
 * **Gamification**: Users earn badges and sparks for their activity and achievements, and compete on the leaderboard for recognition. Tiers will be displayed on the student’s profile and will help clients become aware of their skill level.
- <img width="960" alt="image" src="https://i.imgur.com/hjOL2yZ.png">
+ <img width="960" alt="image" src="https://i.imgur.com/xj7tGND.png">
 
 
 
