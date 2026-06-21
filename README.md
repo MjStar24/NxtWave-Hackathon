@@ -6,7 +6,7 @@ UniConnect is a standalone application built on CampusCollab's base platform to 
 
 ---
 ### TruSpace
-<img width="959" alt="image" src="https://i.imgur.com/c10PQh6.png">
+<img width="959" alt="image" src="https://i.imgur.com/hjcLFHB.png">
 
 
 
