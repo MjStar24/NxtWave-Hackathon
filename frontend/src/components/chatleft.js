@@ -71,7 +71,7 @@ const handleNewChat= async(botname,setMessages,setMessageId,setChatData,chatData
     let objIndex = chatData.findIndex((obj => obj.botname === botname));
     console.log(objIndex);
     let newChatData = chatData
-    newChatData[objIndex].messagesArray.push({botname:botname,messages:Array({role:"system",message: res.data.message}),_id:res.data.id});
+    newChatData[objIndex].messagesArray.push({botname:botname,messages:Array({role:"system",content: res.data.message}),_id:res.data.id});
     setChatData(newChatData);
   }).catch((err) => {
     console.log(err);

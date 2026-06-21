@@ -1,20 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Carousel } from '@heathmont/moon-core-tw';
 import { ControlsChevronLeftSmall, ControlsChevronRightSmall} from '@heathmont/moon-icons-tw';
 import { Link } from 'react-router-dom';
 import axios from "axios";
 
-const ExpertAgents = ({chatIds}) => {
-  const carouselItems = chatIds.map((chat, index)=>{
+const ExpertAgents = ({chatIds = []}) => {
+  const carouselItems = (chatIds || []).map((chat, index)=>{
     return {id: chat._id, name: chat.botname}
   });
-  const initialMessages= chatIds.map((chat, index)=>{
+  const initialMessages= (chatIds || []).map((chat, index)=>{
     const items= chat.messages.filter((message)=> message.role!='system').map((message)=>{
       return {id: chat._id, content: message.content, role: message.role}
     })
     return items;
   })
   const [messages, setMessages] = useState(initialMessages.flat());
+
+  useEffect(() => {
+    setMessages(initialMessages.flat());
+  }, [chatIds]);
   const [newMessage, setNewMessage] = useState('');
 
   const handleSendMessage = async (itemid) => {

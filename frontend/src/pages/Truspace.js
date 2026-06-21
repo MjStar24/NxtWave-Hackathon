@@ -37,8 +37,16 @@ export default function Truspace({userId}) {
     }).then((res) => {
       setData(res.data);
       setProjects(res.data.projects);
-      setChats(res.data.chatIds);
       console.log(res.data);
+    }).catch((err) => {
+        console.log(err);
+    });
+  }, []);
+  useEffect(() => {
+    axios.post("/user/getUser",{
+        userId: "6574d117710649ce4c6b9c3b"
+    }).then((res) => {
+      setChats(res.data.chatIds);
     }).catch((err) => {
         console.log(err);
     });
@@ -63,7 +71,7 @@ export default function Truspace({userId}) {
   return (
     <>
       {
-        (data&&notes)&&
+        (data && notes && chats) &&
       <div className="flex flex-row py-4 gap-4 justify-center">
         <div className="flex flex-col w-[59vw] gap-4">
           <div className="flex w-full justify-between">

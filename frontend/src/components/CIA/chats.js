@@ -10,25 +10,25 @@ const Chats = ({messages,setMessages,messageId,chatData,setChatData,botname,inde
     const handleChange=(e)=>{
         setChat(e.target.value);
     }
-    const sendChat=async()=>{
-        if(chats.trim() !== ""){
-        const newMessage= {role:"user",content:chats}
-        let objIndex = chatData.findIndex((obj => obj.botname === botname));
-        console.log(objIndex);
-        setMessages((prevMessages)=>[...prevMessages,newMessage])
-        let newChatData = chatData
-        newChatData[objIndex].messagesArray[index].messages.push({role:"system",message:chats});
-        setChatData(newChatData);
-        axios.post("/cia/postChat",{chatId:messageId,ques:chats}).then((res) => {
-            console.log(res);
-            setMessages((prevMessages)=>[...prevMessages,res.data.message])
+    const sendChat = async () => {
+        if (chats.trim() !== "") {
+            const newMessage = { role: "user", content: chats };
             let objIndex = chatData.findIndex((obj => obj.botname === botname));
-            let newChatData = chatData
-            newChatData[objIndex].messagesArray[index].messages.push({role:"system",message:res.data.message});
+            console.log(objIndex);
+            setMessages((prevMessages) => [...prevMessages, newMessage]);
+            let newChatData = chatData;
+            newChatData[objIndex].messagesArray[index].messages.push(newMessage);
             setChatData(newChatData);
-        }).catch((err) => {
-            console.log(err);
-        });
+            axios.post("/cia/postChat", { chatId: messageId, ques: chats }).then((res) => {
+                console.log(res);
+                setMessages((prevMessages) => [...prevMessages, res.data.message]);
+                let objIndex = chatData.findIndex((obj => obj.botname === botname));
+                let newChatData = chatData;
+                newChatData[objIndex].messagesArray[index].messages.push(res.data.message);
+                setChatData(newChatData);
+            }).catch((err) => {
+                console.log(err);
+            });
         }
         setChat('');
     }

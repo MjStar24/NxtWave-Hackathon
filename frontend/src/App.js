@@ -45,7 +45,7 @@ function App() {
         <Route exact path="/Truspace" element={<Truspace userId={userId}/>} /> 
         <Route exact path="/Community" element={<Community userId={userId}/>} /> 
         <Route path="/expert" element={<ExpertAgents userId={userId}/>} />
-        <Route path="/cia" element={<Cia userId={userId}/>} />
+        <Route path="/cia" element={<Cia userId="6574d117710649ce4c6b9c3b"/>} />
         <Route path="/postpage/:id" element={<PostPage userId={userId}/>} />
         <Route path="/postwebview/:id" element={<PostWebView userId={userId}/>} />
         {/* <Route exact path="/mentor" element={<Mentor />} />
