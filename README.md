@@ -28,8 +28,8 @@ UniConnect is a standalone application built on CampusCollab's base platform to 
 
 
 * **TruNotes**: Create save and organize notes and according to permissions publish them to specific communities.
-  <img width="581" alt="image" src="https://i.imgur.com/tMFf4oc.png">
-  ![image](https://i.imgur.com/zeHOqGu.png)
+  <img width="581" alt="image" src="https://i.imgur.com/GFVEgHz.png">
+  ![image](https://i.imgur.com/lJkdJNC.png)
 
 
 
