@@ -16,7 +16,7 @@ UniConnect is a standalone application built on CampusCollab's base platform to 
 
 ## Main Features (Both web and app-based)
 * **CIA**: Collective Intelligence Agents (CIAs) are LLMs trained upon specialized information, initiated with additional context prompts.CIAs can also be added as team members while creating a new team on CampusCollab. They can act as project managers, code reviewers, meeting assistants, etc.
-  <img width="956" alt="image" src="https://i.imgur.com/gFzfO3D.png">
+  <img width="956" alt="image" src="https://i.imgur.com/hjcLFHB.png">
 
  
 
